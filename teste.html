@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <template id="use_isso">
+        <p>hello</p>
+    </template>
+
+    <div id="coloque_aqui"></div>
+    <script>
+        var t = document.querySelector("#use_isso");
+        var clone = document.importNode(t.children, true);
+        document.querySelector("#coloque_aqui").innerHTML = clone;
+    </script>
+</body>
+
+</html>
