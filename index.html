@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/geral.css" />
+    <title>Aprender a desenhar - Anatomia</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div id="logo">Aprender a Desenhar</div>
+      <div id="botoes">
+        <a href="/">Home </a>
+        <a href="contato.html">Contato</a>
+        <a href="equipe.html">Equipe</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="conteudo">
+        <h1>Bem vindo</h1>
+        <p>Esse é um site simples que te ensina a desenhar.</p>
+        <div class="quadros">
+          <a class="quadro" href="basico.html">
+            <img src="img/basico6.png" alt="" />
+            <div>Básico</div>
+          </a>
+          <a class="quadro" href="perspectiva.html">
+            <img src="img/perspectiva6.png" alt="" />
+            <div>Perspectiva</div>
+          </a>
+          <a class="quadro" href="iluminacao.html">
+            <img src="img/iluminacao6.png" alt="" />
+            <div>Iluminação</div>
+          </a>
+          <a class="quadro" href="anatomia.html">
+            <img src="img/anatomia4.png" alt="" />
+            <div>Anatomia</div>
+          </a>
+          <a class="quadro" href="expressoes.html">
+            <img src="img/expressoes2.png" alt="" />
+            <div>Expressoes</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style>
+      .quadros {
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-block: 1rem;
+        flex-direction: row;
+      }
+      .quadro {
+        gap: 0.5rem;
+        width: 40%;
+        flex-grow: 1;
+        color: black;
+        padding: 1rem;
+        transition: all;
+        font-size: 2rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        transition-duration: 0.25s;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .quadro:hover {
+        scale: 1.05;
+        box-shadow: 0 0.5rem 1rem #0005;
+      }
+    </style>
+  </body>
+</html>
