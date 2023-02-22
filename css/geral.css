@@ -1,15 +1,22 @@
 * {
   display: flex;
   flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
   display: inline;
 }
 
-figcaption{
+figcaption {
   display: block;
   align-self: center;
+}
+
+ul,
+ol,
+li {
+  display: block;
 }
 
 img {
@@ -34,16 +41,6 @@ style,
 script {
   display: none;
 }
-
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-li {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 17px;
-}
-
 h1,
 h2,
 h3 {
