@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+a {
+  display: inline;
+}
+
+figcaption{
+  display: block;
+  align-self: center;
+}
+
 img {
   width: 100%;
   max-height: 20rem;
@@ -16,7 +25,7 @@ h1 {
   padding: 0;
 }
 
-fieldset{
+fieldset {
   border-radius: 0.5rem;
 }
 
