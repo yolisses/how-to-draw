@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/geral.css" />
-    <link rel="stylesheet" href="css/centraliza.css" />
     <style>
       fieldset {
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -13,7 +12,14 @@
     <title>Aprender a desenhar - Contato</title>
   </head>
   <body>
-    <iframe seamless src="cabecalho.html"></iframe>
+    <header id="cabecalho">
+      <div id="logo">Aprender a Desenhar</div>
+      <div id="botoes">
+        <a href="inicial.html">Home </a>
+        <a href="contato.html">Contato</a>
+        <a href="equipe.html">Equipe</a>
+      </div>
+    </header>
     <div class="container">
       <div class="conteudo">
         <h1>Contato</h1>
@@ -28,7 +34,7 @@
         <p>não tenho um número de telefone.</p>
         <p>Ou envie por aqui mesmo:</p>
         <fieldset>
-          <form action="contato.html">
+          <form style="gap: 1rem">
             <div>
               <label for="nome">nome</label>
               <input type="text" id="nome" />
@@ -39,7 +45,6 @@
             </div>
             <div>
               <label for="comentário">comentario</label>
-              <br />
               <textarea id="comentario" cols="30" rows="10"></textarea>
             </div>
             <div>

@@ -1,29 +1,31 @@
 <style>
   #cabecalho {
     gap: 1rem;
-    padding: 1rem;
-    display: grid;
+    height: 4rem;
+    padding-inline: 1rem;
+    display: flex;
     color: beige;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "vazio logo botoes";
     background-image: linear-gradient(30deg, black, rgba(68, 21, 21, 0.377));
   }
 
   #logo {
-    grid-area: logo;
     font-size: 1.25rem;
     font-weight: bold;
-    text-align: center;
     font-style: oblique;
     text-shadow: 2px 2px darkslategrey;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   #botoes {
-    display: grid;
-    grid-area: botoes;
+    flex-direction: row;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
 
   #botoes a {
@@ -31,14 +33,18 @@
     text-decoration: none;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  #botoes a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <link rel="stylesheet" href="css/geral.css" />
-<div id="cabecalho">
+<header id="cabecalho">
   <div id="logo">Aprender a Desenhar</div>
   <div id="botoes">
     <a href="inicial.html">Home </a>
     <a href="contato.html">Contato</a>
     <a href="equipe.html">Equipe</a>
   </div>
-</div>
+</header>
